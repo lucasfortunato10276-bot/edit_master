@@ -1,0 +1,230 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif, system-ui;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.logo b {
+    color: #ff6600;
+}
+
+/* Hero Section */
+#hero {
+    padding: 100px 5% 60px;
+    text-align: center;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.highlight {
+    color: #ff6600;
+    text-transform: uppercase;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* Botões */
+.btn-main, .btn-buy, .btn-nav {
+    background: linear-gradient(45deg, #ff6600, #ff9900);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-block;
+}
+
+.btn-main {
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    box-shadow: 0 10px 20px rgba(255, 102, 0, 0.3);
+}
+
+.btn-nav {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.btn-main:hover, .btn-buy:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(255, 102, 0, 0.5);
+}
+
+.timer {
+    margin-top: 15px;
+    color: #ff4444;
+    font-size: 0.9rem;
+}
+
+/* Benefícios */
+#features {
+    padding: 80px 5%;
+    background: #111;
+}
+
+#features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+#features ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#features li {
+    background: #1a1a1a;
+    padding: 30px;
+    border-left: 4px solid #ff6600;
+    border-radius: 8px;
+}
+
+#features li strong {
+    display: block;
+    color: #ff6600;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* Depoimentos (Stars) */
+#testimonials {
+    padding: 80px 5%;
+}
+
+#testimonials h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonial-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    border: 1px solid #333;
+}
+
+.stars {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.card span {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Checkout Section */
+#checkout {
+    padding: 100px 5%;
+    text-align: center;
+}
+
+.price-box {
+    background: #ffffff;
+    color: #000;
+    padding: 50px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 50px rgba(255, 102, 0, 0.2);
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    display: block;
+}
+
+.current-price {
+    font-size: 2.5rem;
+    display: block;
+    margin: 10px 0;
+}
+
+.current-price b {
+    color: #ff6600;
+}
+
+.btn-buy {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.guarantee {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    color: #555;
+    font-size: 0.8rem;
+    border-top: 1px solid #222;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    .price-box { padding: 30px; }
+}
